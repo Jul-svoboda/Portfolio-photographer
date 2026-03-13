@@ -3,7 +3,6 @@
     flex-direction: row;
     gap: 20px;
     overflow-x: auto;
-    justify-content: center;
     scrollbar-width: none;
 }
 
