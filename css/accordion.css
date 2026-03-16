@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    width: 100%;
 }
 
 .accordion__question {
@@ -20,26 +21,27 @@
     color: var(--color-accent);
 }
 
-.accordion__question-active {
+.accordion__question.active {
     color: var(--color-light);
     padding: 18px 0;
     width: 100%;
+    border-block-end: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.accordion__question-active:hover {
+.accordion__question.active:hover {
     cursor: pointer;
     color: var(--color-accent);
 }
 
-.accordion__answer {
+.accordion__answer, .accordion__answer--last {
     display: none;
 }
 
-.accordion__answer-active {
+.accordion__answer.active {
     display: block;
     padding-bottom: 20px;
     border-block-end: solid 1px;
@@ -58,6 +60,6 @@
     transform: rotate(90deg);
 }
 
-.accordion__icon--vertical-active {
+.accordion__icon--vertical.active{
     display: none;
 }
