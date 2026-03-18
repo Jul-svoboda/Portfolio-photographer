@@ -1,10 +1,19 @@
 .promo {
     position: relative;
-    min-height: 100vh;
-    padding-top: 60px;
+    @media (min-width: 768px) {
+        /* padding-left: 80px; */
+    }
+}
+
+.promo__wrapper {
+    display: flex;
     background-color: var(--color-dark);
+
+    position: relative;
+
     @media (min-width: 768px) {
         padding-left: 80px;
+        height: 100vh;
     }
 }
 
@@ -13,11 +22,13 @@
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
-
-
+    padding: 60px 0;
+    flex: 1;
 
     @media (min-width: 768px) {
         flex-direction: row;
+        flex: 1;
+
     }
 
     @media (min-width: 1200px) {
@@ -34,6 +45,7 @@
     padding-top: 60px;
 
     @media (min-width: 768px) {
+        align-self: center;
         padding: 160px 0 60px 0;
     }
 }
@@ -60,7 +72,6 @@
 .promo__portrait-block {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
     align-items: flex-end;
 
     @media (min-width: 768px) {
