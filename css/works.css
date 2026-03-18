@@ -5,6 +5,16 @@
     overflow-x: auto;
     scrollbar-width: none;
     padding: 0 20px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+}
+
+.works__item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
 }
 
 .works__item--center {
