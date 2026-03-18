@@ -1,0 +1,58 @@
+.model {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    inset: 60px 0 0 0;
+    display: flex;
+    background-color:rgba(0, 0, 0, .6);
+    
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+.model.active {
+    transform: translateX(0);
+}
+
+.model .form {
+    position: relative;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    padding: 60px;
+    max-width: 500px;
+    margin: 0 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.model .form__button {
+    max-width: 380px;
+    @media (min-width: 768px) {
+        max-width: 380px;
+    }
+}
+
+.model-cross {
+    top: 18px;
+    right: 18px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.model__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--color-dark);
+}
+
+.model__line:first-child {
+    transform: rotate(-45deg);
+}
+
+.model__line:last-child {
+    transform: rotate(45deg);
+}

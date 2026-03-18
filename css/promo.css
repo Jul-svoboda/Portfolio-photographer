@@ -1,5 +1,7 @@
 .promo {
     position: relative;
+    min-height: 100vh;
+    padding-top: 60px;
     background-color: var(--color-dark);
     @media (min-width: 768px) {
         padding-left: 80px;
@@ -11,12 +13,11 @@
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
-    height: 100vh;
+
 
 
     @media (min-width: 768px) {
         flex-direction: row;
-        align-items: center;
     }
 
     @media (min-width: 1200px) {
@@ -30,7 +31,7 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 40px;
-    padding-top: 120px;
+    padding-top: 60px;
 
     @media (min-width: 768px) {
         padding: 160px 0 60px 0;
@@ -50,6 +51,7 @@
 }
 
 .promo__photo {
+    align-self: center;
     @media (max-width: 1200px) {
         display: none;
     }
@@ -58,13 +60,12 @@
 .promo__portrait-block {
     display: flex;
     flex-direction: column;
-    height: 100%;
     padding-bottom: 60px;
     align-items: flex-end;
-    justify-content: space-between;
 
     @media (min-width: 768px) {
-        padding-top: 120px;
+        padding-top: 60px;
+        justify-content: space-between;
     }
 }
 
@@ -77,6 +78,7 @@
 }
 
 .portrait-block__text {
+    padding-top: 60px;
     width: 220px;
     text-align: end;
 }

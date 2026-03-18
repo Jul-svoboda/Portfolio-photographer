@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/recording.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/model.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -459,7 +460,7 @@
     <section id="recording" class="recording">
       <div class="wrapper recording__wrapper">
         <h3 class="recording__title">
-          Like my portfolio? Sign up for a shoot!
+          Like my&nbsp;portfolio? Sign up&nbsp;for a&nbsp;shoot!
         </h3>
         <form id="contact-form" class="form">
           <input
@@ -469,7 +470,7 @@
             placeholder="your name"
           />
           <input class="form__input--number" type="tel" name="phone" placeholder="+1" />
-          <button class="button form__button">Book now</button>
+          <button type="button" class="button form__button">Book now</button>
         </form>
       </div>
     </section>
@@ -484,9 +485,29 @@
         </ul>
       </div>
     </footer>
+    <div class="model">
+        <form id="contact-form" class="form">
+            <button type="button" class="model-cross" aria-label="Close the modal window">
+                <span class="model__line"></span>
+                <span class="model__line"></span>
+            </button>
+            <h3 class="form__title">
+                Like my&nbsp;portfolio? Sign up&nbsp;for a&nbsp;shoot!
+            </h3>
+          <input
+            class="form__input--text"
+            type="text"
+            name="name"
+            placeholder="your name"
+          />
+          <input class="form__input--number" type="tel" name="phone" placeholder="+1" />
+          <button type="button" class="button form__button">Book now</button>
+        </form>
+    </div>
     <script src="js/burger-menu.js"></script>
     <script src="js/works.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/scrolling.js"></script>
+    <script src="js/model.js"></script>
   </body>
 </html>
