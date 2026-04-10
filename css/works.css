@@ -8,8 +8,12 @@
 
     overflow-x: auto;
     scrollbar-width: none;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     scroll-padding: 20px;
+}
+
+.works.no-snap {
+    scroll-snap-type: none;
 }
 
 .works__item {

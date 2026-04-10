@@ -1,4 +1,5 @@
 const works = document.querySelector('.portfolio__gallery');
+works.classList.add('no-snap');
 let speed = 0;
 window.addEventListener('load', () => {
     works.scrollLeft = (works.scrollWidth - works.clientWidth) / 2;
